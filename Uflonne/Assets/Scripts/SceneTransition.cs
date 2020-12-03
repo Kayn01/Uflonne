@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class SceneTransition : MonoBehaviour
 {
@@ -13,6 +14,7 @@ public class SceneTransition : MonoBehaviour
     public float fadeWait;
 
 
+
     private void Awake()
     {
         if(fadeInPanel != null)
@@ -20,6 +22,7 @@ public class SceneTransition : MonoBehaviour
             GameObject panel = Instantiate(fadeInPanel, Vector3.zero, Quaternion.identity) as GameObject;
             Destroy(panel, 1f);
         }
+
     }
 
     public void OnTriggerEnter2D(Collider2D other)
@@ -29,6 +32,7 @@ public class SceneTransition : MonoBehaviour
             playerStorage.initialValue = playerPosition;
             StartCoroutine(FadeCo());
             //SceneManager.LoadScene(sceneToLoad);
+            
         }
     }
 
@@ -40,10 +44,13 @@ public class SceneTransition : MonoBehaviour
         }
         yield return new WaitForSeconds(fadeWait);
         AsyncOperation asyncOperation = SceneManager.LoadSceneAsync(sceneToLoad);
+
         while (!asyncOperation.isDone)
         {
             yield return null;
         }
         
     }
+
+
 }

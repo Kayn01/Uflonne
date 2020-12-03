@@ -9,6 +9,7 @@ public class PlayerMovement : MonoBehaviour
     private Vector3 change;
     private Animator animator;
     public VectorValue startingPosition;
+    public GameObject ground;
 
     // Start is called before the first frame update
     void Start()
@@ -39,6 +40,7 @@ public class PlayerMovement : MonoBehaviour
         else
         {
             animator.SetBool("moving", false);
+            
         }
     }
 
