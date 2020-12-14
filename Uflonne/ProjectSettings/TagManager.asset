@@ -3,7 +3,9 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - enemy
+  - breakable
   layers:
   - Default
   - TransparentFX
@@ -44,9 +46,9 @@ TagManager:
   - name: Signs
     uniqueID: 2935950795
     locked: 0
-  - name: Player
-    uniqueID: 86612977
-    locked: 0
   - name: breakable
     uniqueID: 3710700877
+    locked: 0
+  - name: Player
+    uniqueID: 86612977
     locked: 0
