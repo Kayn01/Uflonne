@@ -12,7 +12,7 @@ public class HeartManager : MonoBehaviour
     public FloatValue heartContainers;
     public FloatValue playerCurrentHealth;
     AudioSource audioData;
-
+    public GameObject GameOverCanvas;
     // Start is called before the first frame update
     void Start()
     {
@@ -52,7 +52,7 @@ public class HeartManager : MonoBehaviour
 
         if(tempHealth <= 0)
         {
-            
+            GameOverCanvas.SetActive(true);
             audioData.Play();
         }
 

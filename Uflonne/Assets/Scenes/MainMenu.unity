@@ -304,7 +304,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 255014262}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 966760604}
+        m_TargetAssemblyTypeName: MainMenuScript, Assembly-CSharp
+        m_MethodName: ButtonPlayClicked
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &255014262
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -630,6 +642,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 966760603}
+  - component: {fileID: 966760604}
   m_Layer: 0
   m_Name: Menu
   m_TagString: Untagged
@@ -655,6 +668,24 @@ Transform:
   m_Father: {fileID: 144818594}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &966760604
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 966760602}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4c53d079a08a5143a7b8002526ab676, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Uflon: {fileID: 11400000, guid: fb41359ff1e1e3d429c3dff91be74233, type: 2}
+  Uflon1: {fileID: 11400000, guid: 077b904a180e46c4bb25e1b07584986e, type: 2}
+  Uflon2: {fileID: 11400000, guid: 23885d0187168ed4fb1078b0f819fb51, type: 2}
+  Uflon3: {fileID: 11400000, guid: 2dcbe8227d30bf944805b6f7db93634e, type: 2}
+  Uflon4: {fileID: 11400000, guid: b66ad0e4ea7aa0b469da7e9d30b2d514, type: 2}
+  Uflon5: {fileID: 11400000, guid: be0e2c40aa0018f42ad7ffa9bea7546d, type: 2}
 --- !u!1 &1047203582
 GameObject:
   m_ObjectHideFlags: 0
@@ -919,13 +950,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1504415898}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
+      - m_Target: {fileID: 966760604}
+        m_TargetAssemblyTypeName: MainMenuScript, Assembly-CSharp
+        m_MethodName: ExitClicked
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 

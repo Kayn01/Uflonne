@@ -11,6 +11,8 @@ public class SceneTitle : MonoBehaviour
     public string placeName;
     public GameObject text;
     public Text placeText;
+    public Text UflonText;
+    public InventoryItem Uflon;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,12 +20,15 @@ public class SceneTitle : MonoBehaviour
         {
             StartCoroutine(placeNameCo());
         }
+
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
+        UflonText.text = Uflon.numberHeld.ToString(); 
     }
 
     private IEnumerator placeNameCo()

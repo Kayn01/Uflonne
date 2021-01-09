@@ -6,9 +6,15 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: bdd81ceb3a5b080469be96c16938dd00
+  - enabled: 1
     path: Assets/Scenes/MainCave.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
     path: Assets/Scenes/Overworld.unity
     guid: c885f22d1735faa429cfbcb2702aa5a1
+  - enabled: 1
+    path: Assets/Scenes/SantosoGrave.unity
+    guid: bd4c2e6fff40f0c478e07ba71eb39a46
   m_configObjects: {}

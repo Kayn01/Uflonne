@@ -14,6 +14,7 @@ public class InventoryItem : ScriptableObject
     public int numberHeld;
     public bool usable;
     public bool unique;
+    public bool destroyed;
     public UnityEvent thisEvent;
 
     public void Use()
