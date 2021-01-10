@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SantosoGrave.unity
     guid: bd4c2e6fff40f0c478e07ba71eb39a46
+  - enabled: 1
+    path: Assets/Scenes/Ending.unity
+    guid: 4f098d05be1d7b74e9967cac96923fc2
   m_configObjects: {}

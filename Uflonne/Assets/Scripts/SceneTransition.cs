@@ -12,12 +12,14 @@ public class SceneTransition : MonoBehaviour
     public GameObject fadeInPanel;
     public GameObject fadeOutPanel;
     public float fadeWait;
+    AudioSource audiosrc;
 
 
 
     private void Awake()
     {
-        if(fadeInPanel != null)
+        audiosrc = GetComponent<AudioSource>();
+        if (fadeInPanel != null)
         {
             GameObject panel = Instantiate(fadeInPanel, Vector3.zero, Quaternion.identity) as GameObject;
             Destroy(panel, 1f);
@@ -52,5 +54,14 @@ public class SceneTransition : MonoBehaviour
         
     }
 
+    public void ButtonTransitionClicked()
+    {
+        StartCoroutine(FadeCo());
+    }
+
+    public void clicked()
+    {
+        audiosrc.Play();
+    }
 
 }

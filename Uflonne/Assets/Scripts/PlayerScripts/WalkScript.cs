@@ -39,7 +39,7 @@ public class WalkScript : MonoBehaviour
             {
 
             
-                audiosrc.PlayDelayed(.5f);
+                audiosrc.PlayDelayed(.38f);
                 Invoke("KillAudio", 1f);
             }
             else {

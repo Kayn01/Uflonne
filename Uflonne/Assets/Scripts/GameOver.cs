@@ -26,7 +26,7 @@ public class GameOver : MonoBehaviour
     {
         if(Uflon.numberHeld >= 5)
         {
-            SceneManager.LoadScene("MainMenu");
+            SceneManager.LoadScene("Ending");
         }
         else
         {

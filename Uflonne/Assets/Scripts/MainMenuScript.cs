@@ -11,11 +11,12 @@ public class MainMenuScript : MonoBehaviour
     public InventoryItem Uflon3;
     public InventoryItem Uflon4;
     public InventoryItem Uflon5;
+    AudioSource audiosrc;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        audiosrc = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -40,5 +41,10 @@ public class MainMenuScript : MonoBehaviour
     public void ExitClicked()
     {
         Application.Quit();
+    }
+
+    public void clicked()
+    {
+        audiosrc.Play();
     }
 }
