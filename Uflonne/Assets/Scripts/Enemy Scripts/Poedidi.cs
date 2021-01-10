@@ -13,6 +13,7 @@ public class Poedidi : Enemy
     public float attackRadius;
     public Transform homePosition;
     public Animator anim;
+    public AudioSource audio;
 
 
     // Start is called before the first frame update
@@ -24,11 +25,21 @@ public class Poedidi : Enemy
         player = GameObject.FindWithTag("Player");
         target = GameObject.FindWithTag("Player").transform;
         anim.SetBool("wakeUp", true);
+        audio = GetComponent<AudioSource>();
+
     }
 
+    void Update()
+    {
+      
+            
+     
+        
+    }
     // Update is called once per frame
     void FixedUpdate()
     {
+        
         CheckDistance();
     }
 
@@ -41,17 +52,20 @@ public class Poedidi : Enemy
             if(currentState == EnemyState.idle || currentState == EnemyState.walk
                 && currentState != EnemyState.stagger)
             {
+                
                 Vector3 temp = Vector3.MoveTowards(transform.position, target.position, moveSpeed * Time.deltaTime);
                 changeAnim(temp - transform.position);
                 myRigidbody.MovePosition(temp);
                 ChangeState(EnemyState.walk);
                 anim.SetBool("wakeUp", true);
+                
             }
 
         }
         else if((Vector3.Distance(target.position,
                             transform.position) > chaseRadius) || player.activeSelf == false)
         {
+            audio.Play();
             anim.SetBool("wakeUp", false);
         }
     }

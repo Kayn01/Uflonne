@@ -33,7 +33,6 @@ ScriptsOnlyBuild:
     Unity.2D.Animation.Editor.dll:
     - UnityEditor.U2D.Animation.BoneGizmo
     Unity.2D.Tilemap.Editor.dll:
-    - UnityEditor.Tilemaps.GridBrush
     - UnityEditor.Tilemaps.GridPaintingState
     - UnityEditor.Tilemaps.GridPaletteBrushes
     - UnityEditor.Tilemaps.GridPalettes
@@ -50,8 +49,10 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -805,7 +806,7 @@ ScriptsOnlyBuild:
     className: GroupWeightManipulator
   - hash:
       serializedVersion: 2
-      Hash: 886ec352ea4f4266d52192295b134747
+      Hash: d4b882e515b45e508339ea2184d8eafd
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PatrolPoedidi
@@ -967,7 +968,7 @@ ScriptsOnlyBuild:
     className: PixelPerfectCamera
   - hash:
       serializedVersion: 2
-      Hash: da32b90ba840e6d62602085e73d4914f
+      Hash: c3baf0bda94c1fc0fafdce6131ec9627
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Poedidi
@@ -1201,7 +1202,7 @@ ScriptsOnlyBuild:
     className: CinemachinePath
   - hash:
       serializedVersion: 2
-      Hash: 7f571709c711860ef02318755b2a45fa
+      Hash: e4a8c97b276db6135a2b76f872c6016a
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Knockback

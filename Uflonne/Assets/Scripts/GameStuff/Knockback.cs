@@ -8,12 +8,12 @@ public class Knockback : MonoBehaviour
     public float thrust;
     public float knockTime;
     public float damage;
-    AudioSource audioData;
+    public AudioSource audioData;
 
     void Start()
     {
 
-        audioData = GetComponent<AudioSource>();
+        //audioData = GetComponent<AudioSource>();
     }
 
     private void OnTriggerEnter2D(Collider2D other)
